@@ -17,7 +17,9 @@
             <div class="row justify-content-xl-center">
                 <div class="col-md-8">
                     <br>
-                    <center><dt><h4 style="color:white">Servicio de Buses de acercamiento</h4></dt></center>
+                    <div class="alert alert-sucess" role="alert" style="background-color:#398A49 ">
+                        <center><dt><h4 style="color:white">Servicio de Buses de acercamiento</h4></dt></center>
+                    </div>
                     <br>
                     <div class="row">
                         <div class="col">

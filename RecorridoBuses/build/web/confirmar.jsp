@@ -19,27 +19,29 @@
             <div class="row justify-content-xl-center">
                 <div class="col-md-6">
                     <br>
-                    <center>
-                        <% int id = Integer.parseInt(request.getParameter("id"));
-                            int pagina = Integer.parseInt(request.getParameter("pagina"));
-                        %>
-                        <dt>
-                            <h4 style="color:white">¿Esta seguro de eliminarlo de forma permanente del recorrido del Bus nº2?</h5>
-                        </dt>
-                    </center>
-                    <br>
-                    <div class="row">
-                        <div class="col order-1">
-                            <form action="eliminar.do" method="post">
-                                <input type="hidden" name="id" value="<%=id%>">
-                                <input type="hidden" name="pagina" value="<%=pagina%>">
-                                <button type="submit" class=" btn btn-success btn-lg" style="width: 220px;background-color:#0B4D03; color: white">Si</button>
-                            </form>
-                        </div>
-                        <div class="col order-2">
-                            <form action="index.jsp">
-                                <button type="submit" class="btn btn-success btn-lg" style="width: 220px;background-color:#0B4D03; color: white">No</button>
-                            </form>
+                    <div class="alert alert-danger" role="alert" style="background-color:#CF6853 ">
+                        <center>
+                            <% int id = Integer.parseInt(request.getParameter("id"));
+                                int pagina = Integer.parseInt(request.getParameter("pagina"));
+                            %>
+                            <dt>
+                                <h4 style="color:white">¿Esta seguro de eliminarlo de forma permanente del recorrido del Bus nº2?</h5>
+                            </dt>
+                        </center>
+                        <br>
+                        <div class="row">
+                            <div class="col order-1">
+                                <form action="eliminar.do" method="post">
+                                    <input type="hidden" name="id" value="<%=id%>">
+                                    <input type="hidden" name="pagina" value="<%=pagina%>">
+                                    <button type="submit" class=" btn btn-danger btn-lg" style="width: 220px;background-color:#9F240B; color: white">Si</button>
+                                </form>
+                            </div>
+                            <div class="col order-2">
+                                <form action="bus<%=pagina%>.jsp">
+                                    <button type="submit" class="btn btn-danger btn-lg" style="width: 220px;background-color:#9F240B; color: white">No</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

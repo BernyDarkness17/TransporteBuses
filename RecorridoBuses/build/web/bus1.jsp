@@ -79,7 +79,7 @@
                                         <input type="hidden" value="1" name="pagina">
                                         <button style="background-color:#5C6210;color:white" type="submit" class="btn btn-warning">Eliminar</button>
                                     </form>
-                                <td>
+                                </td>
                             </tr>
                             <%}%>
 
